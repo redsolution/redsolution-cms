@@ -48,7 +48,7 @@ Thats's all. CMS will download Django and some nessesary libraries and open web
 browser window (or tab) with first step of wizard. At the end of wizard you will
 get website installed in specified folder, also installable on production server.
 
-.. _`our site`: 'http://www.redsolutioncms.org/downloads'
+.. _`our site`: 'http://www.redsolutioncms.org/'
 
 From source
 -----------
