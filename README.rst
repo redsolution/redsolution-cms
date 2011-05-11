@@ -22,7 +22,7 @@ created with web designers.
 We decided that our product should be able to make a website template, ready for
 further development and customizing.
 
-.. _zc.buildout: 'http://www.buildout.org/'
+.. _zc.buildout: http://www.buildout.org/
 
 Features:
 =========
@@ -48,7 +48,7 @@ Thats's all. CMS will download Django and some nessesary libraries and open web
 browser window (or tab) with first step of wizard. At the end of wizard you will
 get website installed in specified folder, also installable on production server.
 
-.. _our site: 'http://www.redsolutioncms.org/'
+.. _our site: http://www.redsolutioncms.org/pages/download
 
 From source
 -----------
@@ -67,7 +67,7 @@ and run loader: ::
 
 Then you will et the same results.
 
-.. _github: 'http://github.com/redsolution/redsolution-cms'
+.. _github: http://github.com/redsolution/redsolution-cms
 
 
 For more documentation, visit: http://www.redsolutioncms.org
