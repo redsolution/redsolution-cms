@@ -48,6 +48,9 @@ class CMSSettings(BaseSettings):
         max_length=50, default='myproject', help_text=_('Invent a project name'))
     domain = models.CharField(verbose_name=_('Desired domain'),
         max_length=50, default='myproject.com', help_text=_('Enter your site domain for configuration'))
+    default_from_email = models.EmailField(verbose_name=_('Default from e-mail'),
+        default='webmaster@example.com',
+        help_text=_('Value for "DEFAULT_FROM_EMAIL" and "SERVER_EMAIL"'))
     database_engine = models.CharField(verbose_name=_('Database engine'),
         max_length=50, choices=DATABASE_ENGINES, default='sqlite3')
     database_name = models.CharField(verbose_name=_('Database name'),

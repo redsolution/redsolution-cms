@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 
 gettext_noop = lambda s: s
 
@@ -13,6 +14,8 @@ MANAGERS = (
 )
 
 EMAIL_SUBJECT_PREFIX = '[{{ cms_settings.project_name }}]'
+DEFAULT_FROM_EMAIL = '{{ cms_settings.default_from_email }}'
+SERVER_FROM_EMAIL = DEFAULT_FROM_EMAIL 
 
 DATABASE_ENGINE = '{{ cms_settings.database_engine }}'
 {% ifequal cms_settings.database_engine 'sqlite3' %}
@@ -35,7 +38,7 @@ LANGUAGE_CODE = 'ru' # Fix me
 
 SITE_ID = 1
 
-MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'media')
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 UPLOAD_DIR = 'upload'
 
 MEDIA_URL = '/media/'
@@ -72,11 +75,11 @@ TEMPLATE_LOADERS = [
 ]
 
 TEMPLATE_DIRS = [
-    os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates'),
+    os.path.join(PROJECT_ROOT, 'templates'),
 ]
 
 FIXTURE_DIRS = [
-    os.path.join(os.path.dirname(os.path.dirname(__file__)), 'fixtures'),
+    os.path.join(PROJECT_ROOT, 'fixtures'),
 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = [
